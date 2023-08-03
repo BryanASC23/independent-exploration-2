@@ -3,3 +3,9 @@ let time = 0;
 // reference to the <span> containing the number
 let counterElement = document.getElementById("time");
 
+function Timer() {
+    time ++;
+    counterElement.textContent = time ;
+}
+
+const timeInt = setInterval(Timer, 1000);
